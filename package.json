@@ -1,5 +1,7 @@
 {
-  "name": "newproject",
+  "name": "@siddharthmehra/monoreporoot",
+  "version": "1.0.0",
+  "description": "A new monorepo setup using pnpm and turbo",
   "private": true,
   "scripts": {
     "build": "turbo run build",
@@ -13,8 +15,27 @@
     "turbo": "^2.5.5",
     "typescript": "5.8.3"
   },
+  
+  "workspaces":[
+    "apps/*",
+    "packages/*"
+  ],
+  "files": [
+  "bin",
+  "packages",
+  "README.md",
+  "turbo.json"
+  ],
   "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">=18"
-  }
+  },
+  "keywords": [
+    "cli",
+    "monorepo",
+    "turborepo",
+    "pnpm"
+  ],
+  "author": "Siddharth Mehra",
+  "license": "MIT"
 }

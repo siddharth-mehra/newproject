@@ -1,0 +1,30 @@
+
+{
+  "name": "@siddharthmehra/monorepocli",
+  "version": "1.0.0",
+  "main": "dist/cli.js",
+  "private":false,
+  "bin": {
+    "monorepo-cli": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "fs-extra": "^11.1.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.0.0",
+    "@types/node": "^18.0.0",
+    "@types/fs-extra": "^11.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": ["cli", "monorepo", "turbo", "pnpm"],
+  "author": "Siddharth Mehra",
+  "license": "MIT"
+}
+
