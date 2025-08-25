@@ -1,7 +1,22 @@
 {
-    "extends": "@repo/typescript-config/base.json",
+    "extends": "../../packages/typescript-config/base.json",
     "compilerOptions": {
         "outDir": "./dist",
         "rootDir": "./src",
+        "typeRoots": ["./node_modules/@types", "../../node_modules/@types"],
+        "baseUrl": ".",
+        "paths": {
+          "@newproject/*": ["../../packages/*/src"],
+        },
+        "composite": true,
+        "declaration": true,
+        "sourceMap": true,
+        "noEmit": false,
+        "incremental": true
     },
+    "include": ["src","types"],
+
+    "references": [
+    { "path": "../../packages/zod" }  
+  ]
 }
