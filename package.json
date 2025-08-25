@@ -11,20 +11,21 @@
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
+    "@types/express-serve-static-core": "^5.0.7",
+    "@types/serve-static": "^1.15.8",
     "prettier": "^3.6.2",
     "turbo": "^2.5.5",
     "typescript": "5.8.3"
   },
-  
-  "workspaces":[
+  "workspaces": [
     "apps/*",
     "packages/*"
   ],
   "files": [
-  "bin",
-  "packages",
-  "README.md",
-  "turbo.json"
+    "bin",
+    "packages",
+    "README.md",
+    "turbo.json"
   ],
   "packageManager": "pnpm@9.0.0",
   "engines": {

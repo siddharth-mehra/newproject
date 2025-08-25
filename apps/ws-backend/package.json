@@ -13,7 +13,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "ws": "^8.18.3"
+    "ws": "^8.18.3",
+    "@newproject/zod": "workspace:*"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
