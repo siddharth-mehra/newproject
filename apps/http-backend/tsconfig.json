@@ -6,17 +6,22 @@
         "typeRoots": ["./node_modules/@types", "../../node_modules/@types"],
         "baseUrl": ".",
         "paths": {
-          "@newproject/*": ["../../packages/*/src"],
+          "@newproject/*": ["../../packages/*/src"]
         },
+        "target": "ES2020",
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
         "composite": true,
         "declaration": true,
         "sourceMap": true,
         "noEmit": false,
-        "incremental": true
+        "incremental": true,
+        "skipLibCheck": true
     },
-    "include": ["src","types"],
-
+    "include": ["src/**/*", "types"],
+    "exclude": ["node_modules", "dist"],
     "references": [
-    { "path": "../../packages/zod" }  
-  ]
+        { "path": "../../packages/zod" }
+    ]
 }
