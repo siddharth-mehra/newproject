@@ -13,8 +13,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "ws": "^8.18.3",
-    "@newproject/zod": "workspace:*"
+    "@newproject/zod": "workspace:*",
+    "@types/jsonwebtoken": "^9.0.10",
+    "dotenv": "^17.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "ws": "^8.18.3"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
